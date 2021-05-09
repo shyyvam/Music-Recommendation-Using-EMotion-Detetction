@@ -1,0 +1,6 @@
+from google.colab.patches import cv2_imshow
+import cv2
+img = cv2.imread('photo.jpg')
+output = emotion_recog(img)
+outputnew=cv2.resize(output,(500,500))
+cv2_imshow(outputnew)
